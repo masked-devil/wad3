@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updating DOM using jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    body{
+        background-color: rgb(215, 211, 211);
+        align-items: center;
+        text-decoration: dashed;
+        text-align: center;
+    }
+    #message{
+        margin: 50px auto;
+        text-align: center;
+    }
+    #newMessageInput{
+        margin: 10px auto 10px auto;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+    #updateMessageButton{
+        margin: 10px auto 10px auto;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        color: green;
+        background-color: yellow;
+        padding: 20px;
+    }
+</style>
+<body>
+
+<div id="message">
+    <h2>Hello, World!</h2>
+</div>
+
+<input type="text" id="newMessageInput" placeholder="Enter your message">
+<button id="updateMessageButton">Update Message</button>
+
+<script>
+$(document).ready(function() {
+    // Function to update the message with user input
+    function updateMessage() {
+        const newMessage = $('#newMessageInput').val(); // Get the value from the input field
+        $('#message h2').text(newMessage); // Update the text inside the <h2> element
+    }
+
+    // Attach the updateMessage function to the click event of the button
+    $('#updateMessageButton').click(updateMessage);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color: #DBAFA0;
+            color: #49243E;
+        }
+        .post {
+            background-color: #BB8493;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .post h2 {
+            color: #704264;
+        }
+        .post p {
+            color: #ffffff;
+        }
+        .ui-header {
+            background-color: #704264;
+            color: #ffffff !important;
+        }
+        .ui-footer {
+            background-color: #704264;
+            color: #ffffff !important;
+        }
+        .footer-text {
+            text-align: center;
+            color: #704264;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .ui-btn {
+            background-color: #BB8493 !important;
+            color: #ffffff !important;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header" data-theme="b">
+        <h1>Simple Blog</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#post1">Advent of AI</a></li>
+            <li><a href="#post2">Effects of AI on College Placements</a></li>
+            <li><a href="#post3">Future of AI</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" class="footer-text">
+        <p>Developed by Swati, 2024</p>
+    </div>
+</div>
+
+<!-- Post 1 Page -->
+<div data-role="page" id="post1">
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" class="ui-btn-left">Home</a>
+        <h1>Advent of AI</h1>
+    </div>
+    <div data-role="content">
+        <div class="post">
+            <h2>Advent of AI</h2>
+            <p>The advent of AI (Artificial Intelligence) has revolutionized various aspects of our lives. From automating repetitive tasks to enhancing decision-making processes, AI has made significant strides in various industries.</p>
+            <p>This post explores the origins of AI, its evolution over the years, and its impact on society.</p>
+        </div>
+    </div>
+    <div data-role="footer" class="footer-text">
+        <p>Developed by Swati, 2024</p>
+    </div>
+</div>
+
+<!-- Post 2 Page -->
+<div data-role="page" id="post2">
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" class="ui-btn-left">Home</a>
+        <h1>Effects of AI on College Placements</h1>
+    </div>
+    <div data-role="content">
+        <div class="post">
+            <h2>Effects of AI on College Placements</h2>
+            <p>With the increasing adoption of AI technologies, the landscape of college placements has undergone significant changes. AI-powered algorithms are being used for resume screening, candidate selection, and even interview processes.</p>
+            <p>This post discusses the implications of AI on college placements, including its benefits, challenges, and potential future developments.</p>
+        </div>
+    </div>
+    <div data-role="footer" class="footer-text">
+        <p>Developed by Swati, 2024</p>
+    </div>
+</div>
+
+<!-- Post 3 Page -->
+<div data-role="page" id="post3">
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" class="ui-btn-left">Home</a>
+        <h1>Future of AI</h1>
+    </div>
+    <div data-role="content">
+        <div class="post">
+            <h2>Future of AI</h2>
+            <p>The future of AI holds immense potential for innovation and transformation across various sectors. From advancements in robotics and autonomous vehicles to breakthroughs in healthcare and finance, AI is poised to reshape the world as we know it.</p>
+            <p>This post explores the possibilities and challenges of the future of AI, including ethical considerations and the role of human-AI collaboration.</p>
+        </div>
+    </div>
+    <div data-role="footer" class="footer-text">
+        <p>Developed by Swati, 2024</p>
+    </div>
+</div>
+
+</body>
+</html>
